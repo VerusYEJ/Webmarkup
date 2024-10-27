@@ -160,7 +160,6 @@ footer {
     }
 }
 
-/*copy in center zetten */
 h5.copy {
     text-align: center;
 }
@@ -184,9 +183,9 @@ h5.copy {
 
 .form-container {
     background-color: var(--secondary-color);
-    padding: 20px;
+    padding: 10px;
     border: var(--table-border);
-    width: 1000px;
+    width: 1100px;
     height: auto;
     border-radius: 15px;
     margin: 0 auto;
@@ -208,7 +207,7 @@ input, textarea {
 }
 
 button {
-    width: calc(100% - 700px);
+    width: calc(100% - 800px);
     border: var(--table-border);
     color: var(--primary-color);
     border: none;
@@ -218,13 +217,9 @@ button {
 }
 
 button:hover {
-    background-color: var(--accent-color); /* Optional: darken button on hover */
+    background-color: var(--accent-color);
 }
 
-h2 {
-    margin: 0;
-    text-align: center;
-}
 .teksten > h2 {
     font-size: var(--font-size-h2);
     font-family: var(--heading-font);
@@ -237,7 +232,7 @@ h2 {
 
 .text-form {
     color: var(--primary-color);
-    text-align: center; /* Center the text */
+    text-align: center;
 }
 
 /* Mobile Menu Styles */
@@ -308,7 +303,6 @@ h2 {
         align-items: center;
     }
     
-    /* Hide the checkbox used for toggling */
     .menu-toggle-footer {
         display: none; 
     }
@@ -329,7 +323,7 @@ h2 {
         transition: 0.3s;
     }
     
-    /* Menu */
+/* Menu */
     .menu-footer {
         display: none;
         flex-direction: column;
@@ -347,7 +341,7 @@ h2 {
         display: flex;
     }
     
-    /* Menu items */
+/* Menu items */
     .menu-footer li {
         margin: 10px 0;
     }
@@ -364,7 +358,6 @@ h2 {
         transform: rotate(-45deg) translate(8px, -10px);
     }
     
-
     .menu-toggle-footer:checked ~ .menu-footer .menu-icon-footer {
         display: flex; 
 
@@ -374,7 +367,6 @@ h2 {
         margin: 0; 
     }
     
-
     main {
         text-align: center;
         padding: 20px;
@@ -402,22 +394,22 @@ h2 {
         background-color: var(--secondary-color);
         padding: 30px;
         border: var(--table-border);
-        width: 300px; /* Adjusted width for better fit */
-        height: auto; /* Allow height to adjust based on content */
-        border-radius: 15px; /* Optional: add rounded corners */
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional: add shadow for depth */
-        margin: 0 auto; /* Center the form horizontally */
-        display: flex; /* Use flexbox for vertical centering */
-        flex-direction: column; /* Align items vertically */
-        align-items: center; /* Center items horizontally within the container */
+        width: 300px;
+        height: auto;
+        border-radius: 15px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     
     input, textarea {
-        width: calc(100% - 50px); /* Reduce width to make inputs smaller on each side */
-        padding: 15px; /* Adjust padding for better fit */
-        margin: 20px 0; /* Reduced margin for better spacing */
-        border: var(--table-border); /* Border defined in CSS variable */
-        border-width: 2px; /* Set smaller border width */
+        width: calc(100% - 50px);
+        padding: 15px;
+        margin: 20px 0;
+        border: var(--table-border);
+        border-width: 2px;
         border-radius: 15px;
         box-sizing: border-box;
         text-align: center;
@@ -435,13 +427,12 @@ h2 {
     }
     
     button:hover {
-        background-color: var(--accent-color); /* Optional: darken button on hover */
+        background-color: var(--accent-color);
     }
-    
     
     .text-form {
         color: var(--primary-color);
-        text-align: center; /* Center the text */
+        text-align: center;
     }
 
     .teksten > h2 {
@@ -458,5 +449,4 @@ h2 {
         font-size: var(--font-size-mobile-h6);
         font-family: var(--main-font);
     }
-
 }

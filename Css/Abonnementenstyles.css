@@ -123,24 +123,21 @@ h4 {
 
 .text-image-block {
     display: flex;
-    align-items: flex-start; /* Align items at the top */
+    align-items: flex-start;
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    gap: 20px; /* Space between image and text */
+    gap: 20px;
 }
-
-
 
 .text-image-block-1,
 .text-image-block-3 {
-    flex-direction: row; /* Text on the left, image on the right */
+    flex-direction: row;
 }
-
 
 .text-image-block-2,
 .text-image-block-4 {
-    flex-direction: row-reverse; /* Text on the right, image on the left */
+    flex-direction: row-reverse;
 }
 
 /* Image container styling */
@@ -213,7 +210,7 @@ h4 {
 }
 
 .text-content {
-    margin: 10px 0; /* Adds space above and below each paragraph */
+    margin: 10px 0;
 }
 
 /* Tabel style */
@@ -314,7 +311,6 @@ h5.copy {
     }
 }
 
-
 /* Mobile Menu Styles */
 @media (max-width: 768px) {
     
@@ -322,7 +318,7 @@ h5.copy {
         display: flex;
     }
 
-    /*navbar */
+/*navbar */
     .menu-toggle:checked + .menu-icon .hamburger:nth-child(1) {
         transform: rotate(45deg) translate(8px, 10px);
     }
@@ -374,7 +370,7 @@ h5.copy {
     .menu-toggle:checked ~ .menu {
         margin-top: 20px;
     }
-
+/* Footer */
     footer {
         position: relative;
         padding: 20px;
@@ -383,12 +379,10 @@ h5.copy {
         align-items: center;
     }
     
-    /* Hide the checkbox used for toggling */
     .menu-toggle-footer {
         display: none; 
     }
     
-
     .menu-icon-footer {
         display: flex;
         flex-direction: column;
@@ -404,7 +398,6 @@ h5.copy {
         transition: 0.3s;
     }
     
-    /* Menu */
     .menu-footer {
         display: none;
         flex-direction: column;
@@ -422,7 +415,6 @@ h5.copy {
         display: flex;
     }
     
-    /* Menu items */
     .menu-footer li {
         margin: 10px 0;
     }
@@ -439,16 +431,10 @@ h5.copy {
         transform: rotate(-45deg) translate(8px, -10px);
     }
     
-
     .menu-toggle-footer:checked ~ .menu-footer .menu-icon-footer {
         display: flex; 
 
-    }
-    
-    .menu-toggle-footer:checked ~ .menu-footer .menu-icon-footer .hamburger {
-        margin: 0; 
-    }
-    
+    } 
 
     main {
         text-align: center;
@@ -579,7 +565,5 @@ h5.copy {
         }
     }
 
-    .text-content {
-        text-align: center;
-    }
+
 }

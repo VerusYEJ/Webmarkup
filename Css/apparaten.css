@@ -127,11 +127,11 @@ h6 {
 
 .text-image-block {
     display: flex;
-    align-items: flex-start; /* Align items at the top */
+    align-items: flex-start;
     max-width: 1200px;
     margin: 0 auto;
     padding: 90px;
-    gap: 20px; /* Space between image and text */
+    gap: 20px;
 }
 
 .text-image-block-4 {
@@ -142,11 +142,8 @@ h6 {
 .text-image-block-2,
 .text-image-block-3,
 .text-image-block-4 {
-    flex-direction: row; /* Text on the left, image on the right */
+    flex-direction: row;
 }
-
-
-
 
 /* Image container styling */
 .image-container-1 {
@@ -218,7 +215,7 @@ h6 {
 }
 
 .text-content {
-    margin: 10px 0; /* Adds space above and below each paragraph */
+    margin: 10px 0;
 }
 
 /* Tabel style */
@@ -319,7 +316,6 @@ h5.copy {
     }
 }
 
-
 /* Mobile Menu Styles */
 @media (max-width: 768px) {
     
@@ -388,7 +384,6 @@ h5.copy {
         align-items: center;
     }
     
-    /* Hide the checkbox used for toggling */
     .menu-toggle-footer {
         display: none; 
     }
@@ -409,7 +404,7 @@ h5.copy {
         transition: 0.3s;
     }
     
-    /* Menu */
+/* Menu */
     .menu-footer {
         display: none;
         flex-direction: column;
@@ -427,7 +422,7 @@ h5.copy {
         display: flex;
     }
     
-    /* Menu items */
+/* Menu items */
     .menu-footer li {
         margin: 10px 0;
     }
@@ -444,7 +439,6 @@ h5.copy {
         transform: rotate(-45deg) translate(8px, -10px);
     }
     
-
     .menu-toggle-footer:checked ~ .menu-footer .menu-icon-footer {
         display: flex; 
 
@@ -453,7 +447,6 @@ h5.copy {
     .menu-toggle-footer:checked ~ .menu-footer .menu-icon-footer .hamburger {
         margin: 0; 
     }
-    
 
     main {
         text-align: center;
@@ -476,7 +469,6 @@ h5.copy {
         padding-left: 30px;
         padding-right: 30px;
     }
-    
 
     h5 {
         font-size: var(--font-size-mobile-h5);
@@ -493,7 +485,7 @@ h5.copy {
         text-align: center;
     }
     
-    /* Tabel style */
+/* Tabel style */
     .comparison-table {
         display: flex;
         justify-content: center;
@@ -584,9 +576,5 @@ h5.copy {
             margin-top: 10px;
             width: 120%;
         }
-    }
-
-    .text-content {
-        text-align: center;
     }
 }

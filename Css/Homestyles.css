@@ -91,7 +91,6 @@ nav {
     }
 }
 
-
 main {
     text-align: center;
     padding: 20px;
@@ -109,6 +108,13 @@ h1 {
     font-style: var(--font-style);
     margin-top: 40px;
     margin-bottom: 20px;
+
+    .heading {
+        font-size: var(--font-size-h1);
+        font-family: var(--heading-font);
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
 }
 
 h2 {
@@ -129,23 +135,16 @@ h4 {
     font-family: var(--main-font);
     font-weight: var(--font-weight);
     font-style: var(--font-style);
-
-}
-
-h4.benefits {
-    font-size: var(--font-size-h4);
-    font-family: var(--main-font);
-    padding-left: 156px;  
-    padding-right: 156px;
-    margin-top: 130px;
-    margin-bottom: 130px;
-}
-/* Style voor h1 heading */
-h1.heading {
-    font-size: var(--font-size-h1);
-    font-family: var(--heading-font);
-    margin-top: 30px;
-    margin-bottom: 40px;
+    
+    .benefits {
+        font-size: var(--font-size-h4);
+        font-family: var(--main-font);
+        padding-left: 156px;  
+        padding-right: 156px;
+        margin-top: 130px;
+        margin-bottom: 130px;
+        
+    }
 }
 
 /* Tabel style */
@@ -252,11 +251,9 @@ footer {
     }
 }
 
-/*copy in center zetten */
 h5.copy {
     text-align: center;
 }
-
 
 .menu-icon {
     display: none;
@@ -272,12 +269,10 @@ h5.copy {
     }
 }
 
-
-
 /* Mobile Menu Styles */
 @media (max-width: 768px) {
     
-    .menu-icon {
+    .menu-icon{
         display: flex;
     }
 
@@ -342,12 +337,6 @@ h5.copy {
         align-items: center;
     }
     
-    /* Hide the checkbox used for toggling */
-    .menu-toggle-footer {
-        display: none; 
-    }
-    
-
     .menu-icon-footer {
         display: flex;
         flex-direction: column;
@@ -398,24 +387,11 @@ h5.copy {
         transform: rotate(-45deg) translate(8px, -10px);
     }
     
-
     .menu-toggle-footer:checked ~ .menu-footer .menu-icon-footer {
         display: flex; 
 
     }
-    
-    .menu-toggle-footer:checked ~ .menu-footer .menu-icon-footer .hamburger {
-        margin: 0; 
-    }
-    
-
-    main {
-        text-align: center;
-        padding: 20px;
-        font-weight: var(--font-weight);
-        font-style: var(--font-style);
-    }
-    
+     
     h1 {
         font-size: var(--font-size-mobile-h1);
         font-family: var(--heading-font);
@@ -447,23 +423,31 @@ h5.copy {
         font-weight: var(--font-weight);
         font-style: var(--font-style);
         line-height: normal;
-    
     }
-    
+
     h4.benefits {
         font-size: var(--font-size-mobile-h4);
         font-family: var(--main-font);
-        padding-left: 20px;  
-        padding-right: 20px;
-        margin-top: 30px;
-        margin-bottom: 30px;
+        padding-left: 30px;  
+        padding-right: 30px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
-    /* Style voor h1 heading */
-    h1.heading {
-        font-size: var(--font-size-mobile-h1);
-        font-family: var(--heading-font);
-        margin-top: 30px;
-        margin-bottom: 40px;
+
+    h5 {
+        font-size: var(--font-size-mobile-h5);
+        font-family: var(--main-font);
+        font-weight: var(--font-weight);
+        font-style: var(--font-style);
+        text-align: center;
+
+        .copy {
+            font-size: var(--font-size-mobile-h5);
+            font-family: var(--main-font);
+            font-weight: var(--font-weight);
+            font-style: var(--font-style);
+            text-align: center;
+        }
     }
     
     /* Tabel style */
@@ -487,7 +471,6 @@ h5.copy {
         }
     }
     
-    
     .featured-shows {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -509,21 +492,5 @@ h5.copy {
             display: block;
         }
     
-    }
-
-    h5 {
-        font-size: var(--font-size-mobile-h5);
-        font-family: var(--main-font);
-        font-weight: var(--font-weight);
-        font-style: var(--font-style);
-        text-align: center;
-
-        .copy {
-            font-size: var(--font-size-mobile-h5);
-            font-family: var(--main-font);
-            font-weight: var(--font-weight);
-            font-style: var(--font-style);
-            text-align: center;
-        }
     }
 }
