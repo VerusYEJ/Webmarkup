@@ -29,7 +29,6 @@ body {
     padding: 0;
     background-color: var(--primary-color);
     color: var(--secondary-color);
-    word-spacing: 0.1em;
 }
 
 /* Desktop Navigation */
@@ -91,108 +90,12 @@ nav {
     }
 }
 
-
 main {
     text-align: center;
     padding: 20px;
-    text-indent: 20px;
-    line-height: 1.5;
-    font-weight: var(--font-weight);
-    font-style: var(--font-style);
-    letter-spacing: 0.05em;
-}
-
-h1 {
-    font-size: var(--font-size-h1);
-    font-family: var(--heading-font);
-    font-weight: var(--font-weight);
-    font-style: var(--font-style);
-    margin-top: 40px;
-    margin-bottom: 20px;
-}
-
-h2 {
-    font-size: var(--font-size-h2);
-    font-family: var(--heading-font);
     font-weight: var(--font-weight);
     font-style: var(--font-style);
 }
-
-h3 {
-    font-size: var(--font-size-h3);
-    font-weight: var(--font-weight);
-    font-style: var(--font-style);
-}
-
-h4 {
-    font-size: var(--font-size-h4);
-    font-family: var(--main-font);
-    font-weight: var(--font-weight);
-    font-style: var(--font-style);
-
-}
-
-h4.benefits {
-    font-size: var(--font-size-h4);
-    font-family: var(--main-font);
-    padding-left: 156px;  
-    padding-right: 156px;
-    margin-top: 130px;
-    margin-bottom: 130px;
-}
-/* Style voor h1 heading */
-h1.heading {
-    font-size: var(--font-size-h1);
-    font-family: var(--heading-font);
-    margin-top: 30px;
-    margin-bottom: 40px;
-}
-
-/* Tabel style */
-.comparison-table {
-    display: flex;
-    justify-content: center;
-    height: 1023px; 
-    margin: 0 auto;
-
-    table {
-        background-color: var(--secondary-color);
-        color: var(--primary-color);
-        border-collapse: collapse;
-        border: var(--table-border);
-        
-        th, td {
-            border: var(--table-border);
-            padding: 20px;
-            text-align: center;
-        }
-    }
-}
-
-
-.featured-shows {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr); 
-    gap: 0; 
-    width: 1400px; 
-    margin: 40px auto; 
-
-
-    figure {
-        margin: 0;
-        padding: 0;
-    }
-
-    img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        display: block;
-    }
-
-}
-
 
 footer {
     display: flex;
@@ -257,7 +160,6 @@ h5.copy {
     text-align: center;
 }
 
-
 .menu-icon {
     display: none;
     flex-direction: column;
@@ -272,7 +174,83 @@ h5.copy {
     }
 }
 
+.padding {
+    padding-bottom: 90px;
+}
+/* Layout grid with overall structure and outer border */
+.layout-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6 columns for desktop */
+    grid-template-rows: auto auto 1fr; /* Auto for rows */
+    grid-column-gap: 0; /* No gaps between columns */
+    grid-row-gap: 0; /* No gaps between rows */
+    box-sizing: border-box;
+    border: var(--table-border);
+}
 
+/* Logo styles */
+.logo {
+    grid-area: 1 / 1 / 2 / 3; /* Logo spans first row */
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Ensure logo fits */
+    width: 100%; /* Ensure logo fits */
+    max-width: 100%; /* Prevent overflow */
+}
+
+/* Logo text styles */
+.logo-text {
+    grid-area: 2 / 1 / 3 / 3; /* Logo text spans second row */
+    border: var(--table-border);
+    box-sizing: border-box;
+    text-align: center;
+    font-size: var(--font-size-h4);
+    font-family: var(--main-font);
+}
+
+/* Main text styles */
+.main-text {
+    grid-area: 1 / 3 / 3 / 7; /* Main text spans from column 3 to 7 */
+    border: var(--table-border);
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-size: var(--font-size-h6);
+    font-family: var(--main-font);
+}
+
+/* Photos section */
+.fotos {
+    grid-area: 3 / 1 / 6 / 7; /* Photos span the bottom area */
+    display: flex;
+    flex-direction: row; /* Default to row on desktop */
+    border: var(--table-border);
+    box-sizing: border-box;
+    padding: 0; /* No padding inside fotos */
+    height: 100%;
+    margin: 0;
+}
+
+/* Bottom image styles */
+.bottom-image {
+    flex: 1; /* Each image takes equal space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+
+    img {
+        width: 100%; /* Full width for images */
+        height: 100%; /* Full height for images */
+        object-fit: cover; /* Cover the area */
+        display: block;
+    }
+}
 
 /* Mobile Menu Styles */
 @media (max-width: 768px) {
@@ -415,115 +393,62 @@ h5.copy {
         font-weight: var(--font-weight);
         font-style: var(--font-style);
     }
-    
-    h1 {
-        font-size: var(--font-size-mobile-h1);
-        font-family: var(--heading-font);
-        font-weight: var(--font-weight);
-        font-style: var(--font-style);
-        margin-top: 40px;
-        margin-bottom: 20px;
-        line-height: normal;
-    }
-    
-    h2 {
-        font-size: var(--font-size-mobile-h2);
-        font-family: var(--heading-font);
-        font-weight: var(--font-weight);
-        font-style: var(--font-style);
 
-    }
-
-    h3 {
-        font-size: var(--font-size-mobile-h3);
-        font-weight: var(--font-weight);
-        font-style: var(--font-style);
-        line-height: normal;
-    }
-    
-    h4 {
-        font-size: var(--font-size-mobile-h4);
-        font-family: var(--main-font);
-        font-weight: var(--font-weight);
-        font-style: var(--font-style);
-        line-height: normal;
-    
-    }
-    
-    h4.benefits {
-        font-size: var(--font-size-mobile-h4);
-        font-family: var(--main-font);
-        padding-left: 20px;  
-        padding-right: 20px;
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-    /* Style voor h1 heading */
-    h1.heading {
-        font-size: var(--font-size-mobile-h1);
-        font-family: var(--heading-font);
-        margin-top: 30px;
-        margin-bottom: 40px;
-    }
-    
-    /* Tabel style */
-    .comparison-table {
-        display: flex;
-        justify-content: center;
-        height: 284px; 
-        margin: 0 auto;
-    
-        table {
-            background-color: var(--secondary-color);
-            color: var(--primary-color);
-            border-collapse: collapse;
-            border: var(--table-border);
-            
-            th, td {
-                border: var(--table-border);
-                padding: 1px;
-                text-align: center;
-            }
-        }
-    }
-    
-    
-    .featured-shows {
-        display: grid;
+    .layout-grid {
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr); 
-        gap: 0; 
-        width: 430px; 
-        margin: 40px auto; 
-    
-    
-        figure {
-            margin: 0;
-            padding: 0;
-        }
-    
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-        }
-    
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
     }
 
-    h5 {
-        font-size: var(--font-size-mobile-h5);
-        font-family: var(--main-font);
-        font-weight: var(--font-weight);
-        font-style: var(--font-style);
-        text-align: center;
+    .logo {
+        grid-area: 1 / 1 / 2 / 2;
+        height: auto;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 96%;
+        overflow: hidden;
 
-        .copy {
-            font-size: var(--font-size-mobile-h5);
-            font-family: var(--main-font);
-            font-weight: var(--font-weight);
-            font-style: var(--font-style);
-            text-align: center;
+    }
+
+    .logo-text {
+        grid-area: 2 / 1 / 3 / 2;
+        border: var(--table-border);
+        box-sizing: border-box;
+        text-align: center;
+        justify-content: center;
+        overflow: hidden;
+        font-size: var(--font-size-mobile-h2);
+        font-family: var(--main-font);
+        padding: 0;
+        margin: 0;
+    }
+
+    .main-text {
+        grid-area: 1 / 2 / 3 / 3;
+        font-size: var(--font-size-mobile-h3);
+        border: var(--table-border);
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: var(--main-font);
+    }
+
+    .fotos {
+        grid-area: 3 / 1 / 4 / 3;
+        flex-direction: column;
+    }
+
+    .bottom-image {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+
+        img {
+            height: auto;
         }
     }
 }
