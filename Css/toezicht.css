@@ -320,6 +320,12 @@ h5.copy {
     }
 }
 
+h1{
+    text-transform: uppercase;
+}
+.Hidden {
+    visibility: hidden;
+}
 
 /* Mobile Menu Styles */
 @media (max-width: 768px) {

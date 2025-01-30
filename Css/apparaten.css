@@ -316,6 +316,10 @@ h5.copy {
     }
 }
 
+.Hidden {
+    visibility: hidden;
+}
+
 /* Mobile Menu Styles */
 @media (max-width: 768px) {
     

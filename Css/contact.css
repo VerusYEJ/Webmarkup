@@ -32,6 +32,9 @@ body {
     word-spacing: 0.1em;
 }
 
+h1{
+    text-transform: uppercase;
+}
 /* Desktop Navigation */
 nav {
     display: flex;
@@ -235,6 +238,10 @@ button:hover {
     text-align: center;
 }
 
+.Hidden {
+    visibility: hidden;
+}
+
 /* Mobile Menu Styles */
 @media (max-width: 768px) {
     
@@ -268,6 +275,13 @@ button:hover {
         align-items: center;
     }
 
+    .float-left {
+        float: left;
+        visibility: hidden; /* Element is invisible but still occupies space */
+        width: 100px;
+        height: 100px;
+        background-color: red; /* Just to show it's a box when visible */
+    }
     .menu {
         display: none;
         justify-content: center;
@@ -448,5 +462,8 @@ button:hover {
     h6{
         font-size: var(--font-size-mobile-h6);
         font-family: var(--main-font);
+    }
+    .Hidden {
+        visibility: hidden;
     }
 }

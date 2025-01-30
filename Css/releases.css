@@ -247,6 +247,13 @@ h5.copy {
     }
 }
 
+.Hidden {
+    visibility: hidden;
+}
+
+h1{
+    text-transform: uppercase;
+}
 /* Mobile Menu Styles */
 @media (max-width: 768px) {
     
