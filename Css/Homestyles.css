@@ -52,7 +52,9 @@ body {
     text-decoration: underline;
 }
 
-
+p::first-letter {
+    text-transform: uppercase;
+}
 
 /* Desktop Navigation */
 nav {
@@ -66,7 +68,6 @@ nav {
     font-size: var(--font-size-h6);
     font-weight: var(--font-weight);
     font-style: var(--font-style);
-
 
     .menu-toggle {
         display: none;
@@ -98,10 +99,6 @@ nav {
                 padding: 10px;
                 position: relative;
                 border-radius: 15px;
-
-                a::first-letter{
-                    text-transform: uppercase;
-                }
 
                 &.active {
                     background-color: var(--accent-color);
